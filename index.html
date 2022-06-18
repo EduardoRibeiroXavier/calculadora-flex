@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Calculadora flex</title>
   </head>
   <body>
@@ -13,9 +14,13 @@
         <div class="header">
           <h1>Calculadora Gasolina/Etanol</h1>
         </div>
-        <input type="number" name="Gasolina" id="gasolina-price" placeholder="Valor da Gasolina" />
-        <input type="number" name="etanol" id="etanol-price" placeholder="Valor do Etanol" />
+        <div class="inputs">
+        <input type="number" name="Gasolina" id="gasolina-price" placeholder="Valor da Gasolina(R$)" />
+        <input type="number" name="etanol" id="etanol-price" placeholder="Valor do Etanol(R$)" />
+        </div>
+        <div class="button">
         <button id="button" onclick="calcular()" >Calcular</button>
+        </div>
         <p id="result" class="result"></p>
       </div>
     </div>
